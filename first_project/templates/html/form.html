@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+
+<h1>Welcome to form</h1>
+<form method="post">
+{{ form.as_p }} <!--gives form elements in vertical order-->
+{% csrf_token %} <!--gives security to users-->
+<input type="submit" class="btn" value="submit">
+</form>
+</html>

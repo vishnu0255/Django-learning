@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<h1>Here are your users:</h1>
+
+{% for i in user_details_list %}
+
+<h4>
+<p style="line-height:0.0">
+&emsp;&emsp;{{ forloop.counter }}.User Info
+<ul style="list-style-type:circle;padding-left:5.5em">
+<li>First Name:{{ i.firstName }}</li>
+<li>Second Name:{{ i.secondName }}</li>
+<li>Email:{{ i.email }}</li>
+</ul>
+</p>
+</h4>
+
+{% endfor %}
+</html>
